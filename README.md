@@ -51,7 +51,40 @@ Titanic-Survival-Prediction/
   - `Age` - Age in years.  
   - `Fare` - Passenger fare.  
   - `Embarked` - Port of embarkation.  
-  - `Cabin`, `SibSp`, `Parch`, etc.  
+  - `Cabin`, `SibSp`, `Parch`, etc.
+ 
+  ---  
+ Why Random Forest?
+1. Handles Missing Values Efficiently
+The Titanic dataset contains missing values in Age, Cabin, and Embarked columns.
+
+Random Forest can handle missing values by averaging predictions from multiple decision trees.
+
+2. Works Well with Categorical Data
+The dataset includes categorical features like Sex (Male/Female), Pclass (1st, 2nd, 3rd), and Embarked (C/Q/S).
+
+Random Forest can handle categorical data without needing extensive preprocessing.
+
+3. Reduces Overfitting Compared to Decision Trees
+A single Decision Tree can overfit, capturing noise instead of patterns.
+
+Random Forest uses multiple trees and averages their predictions, reducing overfitting.
+
+4. Handles Non-Linear Relationships
+Some features like Fare vs. Survival or Age vs. Survival have non-linear relationships.
+
+Random Forest is flexible and captures such patterns better than linear models.
+
+5. Feature Importance Analysis
+Random Forest provides a feature importance ranking, helping us understand which features influence survival.
+
+Example: Sex and Pclass are usually the most important predictors.
+
+6. Robust and High Accuracy
+In previous Titanic Kaggle competitions, Random Forest performed better than simpler models like Logistic Regression.
+
+It achieves an accuracy of around 80-85% on Titanic datasets.
+
 
 
 
